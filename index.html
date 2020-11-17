@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var age = +prompt('Какой ваш возраст?', '');
+
+        if (age == 1 || age == 21 || age == 31 || age == 41 || age == 51 || age == 61 || age == 71 || age == 81 || age == 91) {
+            alert('Ваш возраст - ' + age + ' год!');
+        } else if ((age > 1 && age < 5) ||
+            (age >= 22 && age <= 24) ||
+            (age >= 32 && age <= 34) ||
+            (age >= 42 && age <= 44) ||
+            (age >= 52 && age <= 54) ||
+            (age >= 62 && age <= 64) ||
+            (age >= 72 && age <= 74) ||
+            (age >= 82 && age <= 84) ||
+            (age >= 92 && age <= 94)) {
+            alert('Ваш возраст - ' + age + ' года!');
+        } else if (!age) {
+            alert('Введите правильное значение.');
+        } else if (age < 1) {
+            alert('Вы ещё не родились, попробуйте ещё раз.');
+        } else if (age < 101) {
+            alert('Ваш возраст - ' + age + ' лет!');
+        } else {
+            alert('Столько не живут, попробуйте ещё раз.');
+        }
+    </script>
+</body>
+
+</html>
